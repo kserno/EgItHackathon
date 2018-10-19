@@ -4,6 +4,7 @@ import android.Manifest
 import android.os.Bundle
 import com.karumi.dexter.Dexter
 import com.google.android.material.snackbar.Snackbar
+import com.google.ar.core.ArCoreApk
 import com.karumi.dexter.listener.single.SnackbarOnDeniedPermissionListener
 import com.karumi.dexter.listener.single.PermissionListener
 
@@ -14,6 +15,11 @@ import com.karumi.dexter.listener.single.PermissionListener
  */
 class MainActivity: BaseActivity() {
 
+
+    override fun onResume() {
+        super.onResume()
+
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -36,5 +42,9 @@ class MainActivity: BaseActivity() {
                 .withPermission(Manifest.permission.CAMERA)
                 .withListener(snackbarPermissionListener)
                 .check()
+
+
     }
+
+
 }
