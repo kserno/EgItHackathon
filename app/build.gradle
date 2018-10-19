@@ -1,14 +1,17 @@
 apply plugin: 'com.android.application'
 
 apply plugin: 'kotlin-android'
-
+apply plugin: 'kotlin-kapt'
 apply plugin: 'kotlin-android-extensions'
+apply plugin: "androidx.navigation.safeargs" // necessary for navigation
+
+apply from: '../dependencies/dependencies.gradle'
 
 android {
     compileSdkVersion 28
     defaultConfig {
         applicationId "pandas.com.egithackathon"
-        minSdkVersion 14
+        minSdkVersion 24
         targetSdkVersion 28
         versionCode 1
         versionName "1.0"
@@ -20,13 +23,37 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+
 }
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation"org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
-    implementation 'com.android.support:appcompat-v7:28.0.0'
-    testImplementation 'junit:junit:4.12'
-    androidTestImplementation 'com.android.support.test:runner:1.0.2'
-    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    implementation 'androidx.appcompat:appcompat:1.0.0'
+
+    implementation kotlinDependencies.lib
+
+    implementation navigationDependencies.fragment
+    implementation navigationDependencies.ui
+
+    implementation retrofitDependencies.lib
+    implementation retrofitDependencies.moshiConverter
+    implementation retrofitDependencies.rxJavaAdapter
+    implementation retrofitDependencies.okHttpLoggingInterceptor
+
+    implementation rxJavaDependencies.lib
+    implementation rxJavaDependencies.androidLib
+
+    implementation lifecycleDependencies.lib
+
+    implementation daggerDependencies.lib
+    kapt daggerDependencies.annotationProcessor
+
+    implementation constraintLayoutDependiencies.lib
+
+    testImplementation testDependencies.junit4
+
+    implementation calendarProviderDependencies.lib
+    implementation dexterDependencies.lib
+
+
 }

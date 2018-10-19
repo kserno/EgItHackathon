@@ -1,0 +1,156 @@
+ext {
+
+    def lifecycle_version = "1.1.1"
+    def room_version = "1.1.1"
+    def paging_version = "1.0.0"
+    def nav_version = "1.0.0-alpha05"
+    def work_version = "1.0.0-alpha08"
+
+    def dagger_version = "2.16"
+    def retrofit_version = "2.4.0"
+
+    def support_version = "27.1.1"
+
+    def rxjava_version = "2.2.2"
+    def rxandroid_version = "2.1.0"
+
+    def moshi_version = "1.7.0"
+
+    def constraintlayout_version = "1.1.3"
+
+    def calendarProvider_version = "0.0.1"
+
+    def dexter_version = "5.0.0"
+
+    // https://developer.android.com/topic/libraries/architecture/lifecycle
+    lifecycleDependencies = [
+            // ViewModel and LiveData
+            lib : "android.arch.lifecycle:extensions:$lifecycle_version",
+            // alternatively - just ViewModel
+            viewModel: "android.arch.lifecycle:viewmodel:$lifecycle_version",
+            // alternatively - just LiveData
+            liveData: "android.arch.lifecycle:livedata:$lifecycle_version",
+
+            annotationProcessor: "android.arch.lifecycle:compiler:$lifecycle_version",
+            // optional - ReactiveStreams support for LiveData
+            liveDataRx : "android.arch.lifecycle:reactivestreams:$lifecycle_version",
+            // optional - Test helpers for LiveData
+            testHelpers : "android.arch.core:core-testing:$lifecycle_version"
+    ]
+
+
+    // https://developer.android.com/topic/libraries/architecture/room
+    roomDependencies = [
+            lib : "android.arch.persistence.room:runtime:$room_version",
+            annotationProcessor : "android.arch.persistence.room:compiler:$room_version",
+
+            // optional - RxJava support for Room
+            rxExtensions : "android.arch.persistence.room:rxjava2:$room_version",
+
+            // optional - Guava support for Room, including Optional and ListenableFuture
+            guavaSupport : "android.arch.persistence.room:guava:$room_version",
+
+            // Test helpers
+            testHelpers: "android.arch.persistence.room:testing:$room_version"
+    ]
+
+    // https://developer.android.com/topic/libraries/architecture/paging/
+    pagingDependencies = [
+            lib: "android.arch.paging:runtime:$paging_version",
+
+            // alternatively - without Android dependencies for testing
+            testHelpers: "android.arch.paging:common:$paging_version",
+
+            // optional - RxJava support, currently in release candidate
+            rxExtensions: "android.arch.paging:rxjava2:1.0.0-rc1"
+    ]
+
+    // https://developer.android.com/topic/libraries/architecture/navigation/navigation-implementing
+    navigationDependencies = [
+            fragment : "android.arch.navigation:navigation-fragment-ktx:$nav_version",
+            ui : "android.arch.navigation:navigation-ui-ktx:$nav_version",
+
+            testHelpers: "android.arch.navigation:navigation-testing-ktx:$nav_version"
+    ]
+
+    // https://developer.android.com/topic/libraries/architecture/workmanager.html
+    workManagerDependencies = [
+            lib: "android.arch.work:work-runtime-ktx:$work_version",
+
+            // optional - Firebase JobDispatcher support
+            firebaseSupport : "android.arch.work:work-firebase:$work_version",
+
+            testHelpers: "android.arch.work:work-testing:$work_version"
+    ]
+
+    daggerDependencies = [
+            lib : "com.google.dagger:dagger:$dagger_version",
+            annotationProcessor: "com.google.dagger:dagger-compiler:$dagger_version"
+    ]
+
+    rxJavaDependencies = [
+            lib : "io.reactivex.rxjava2:rxjava:$rxjava_version",
+            androidLib : "io.reactivex.rxjava2:rxandroid:$rxandroid_version"
+    ]
+
+    retrofitDependencies = [
+            lib : "com.squareup.retrofit2:retrofit:$retrofit_version",
+            rxJavaAdapter : "com.squareup.retrofit2:adapter-rxjava2:$retrofit_version",
+            moshiConverter : "com.squareup.retrofit2:converter-moshi:$retrofit_version",
+            gsonConverter : "com.squareup.retrofit2:converter-gson:$retrofit_version",
+            okHttpLoggingInterceptor : "com.squareup.okhttp3:logging-interceptor:3.11.0",
+            okHttp : "com.squareup.okhttp3:okhttp:3.9.0"
+    ]
+
+
+    moshiDependencies = [
+            lib : "com.squareup.moshi:moshi:$moshi_version",
+            codegen : "com.squareup.moshi:moshi-kotlin-codegen:$moshi_version"
+
+    ]
+
+    glideDependencies = [
+            lib : ""
+    ]
+
+    supportDependencies = [
+            appCompat : "com.android.support:appcompat-v7:$support_version",
+            design : "com.android.support:design:$support_version",
+            cardView : "com.android.support:cardview-v7:$support_version",
+            gridLayout : "com.android.support:gridlayout-v7:$support_version",
+            annotation : "com.android.support:support-annotations:$support_version",
+            percent : "com.android.support:percent:$support_version",
+            recyclerView : "com.android.support:recyclerview-v7:$support_version",
+    ]
+
+    multidexDependencies = [
+            lib : "com.android.support:multidex:1.0.0"
+    ]
+
+    ktxDependencies = [
+            lib : "androidx.core:core-ktx:1.0.0-alpha1"
+    ]
+
+    kotlinDependencies = [
+            lib : "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    ]
+
+    testDependencies = [
+            junit4 : "junit:junit:4.12"
+    ]
+
+    // https://developer.android.com/training/constraint-layout/
+    constraintLayoutDependiencies = [
+            lib : "com.android.support.constraint:constraint-layout:$constraintlayout_version"
+    ]
+
+    // https://github.com/macisamuele/CalendarProvider-Lib
+    calendarProviderDependencies = [
+            lib: "it.macisamuele:calendarprovider-lib:$calendarProvider_version"
+    ]
+
+    // https://github.com/Karumi/Dexter
+    dexterDependencies = [
+            lib: "com.karumi:dexter:$dexter_version"
+    ]
+}
