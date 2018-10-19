@@ -1,7 +1,7 @@
 package pandas.com.egithackathon
 
 import android.os.Bundle
-import android.support.v7.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatActivity
 
 /**
  *  Created by filipsollar on 19.10.18
