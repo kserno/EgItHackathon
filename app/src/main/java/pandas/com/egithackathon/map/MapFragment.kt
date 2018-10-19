@@ -1,10 +1,7 @@
 package pandas.com.egithackathon.map
 
-import android.location.Location
 import android.os.Bundle
-import android.view.LayoutInflater
 import android.view.View
-import android.view.ViewGroup
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import com.google.android.gms.maps.GoogleMap
@@ -12,21 +9,22 @@ import com.google.android.gms.maps.OnMapReadyCallback
 import kotlinx.android.synthetic.main.fragment_map.*
 import pandas.com.egithackathon.BaseFragment
 import pandas.com.egithackathon.R
-import pandas.com.egithackathon.di.MainModule
 import pandas.com.egithackathon.di.map.DaggerMapComponent
-import pandas.com.egithackathon.di.map.MapComponent
 import pandas.com.egithackathon.di.map.MapModule
 import pandas.com.egithackathon.di.map.MapViewModelFactory
 import javax.inject.Inject
 import com.google.android.gms.maps.CameraUpdateFactory
 import com.google.android.gms.maps.model.LatLng
+import com.google.android.gms.maps.model.Marker
 import com.google.android.gms.maps.model.MarkerOptions
+import com.google.android.gms.maps.model.PolylineOptions
+import com.google.maps.android.PolyUtil
 
 
 /**
  *  Created by filipsollar on 19.10.18
  */
-class MapFragment: BaseFragment(), MapView, OnMapReadyCallback {
+class MapFragment: BaseFragment(), MapView, OnMapReadyCallback, GoogleMap.OnMarkerClickListener {
 
     companion object {
         const val MAP_VIEW_BUNDLE_KEY = "MAP_VIEW_BUNDLE_KEY"
@@ -116,6 +114,7 @@ class MapFragment: BaseFragment(), MapView, OnMapReadyCallback {
     override fun onMapReady(googleMap: GoogleMap?) {
         this.googleMap = googleMap
         googleMap?.setMinZoomPreference(12f)
+        googleMap?.setOnMarkerClickListener(this)
 
         val myLocation = LatLng(viewModel.location.value!!.latitude, viewModel.location.value!!.longitude)
 
@@ -129,6 +128,19 @@ class MapFragment: BaseFragment(), MapView, OnMapReadyCallback {
             googleMap?.addMarker(options)
         }
 
+
         googleMap?.moveCamera(CameraUpdateFactory.newLatLng(myLocation))
+    }
+
+    override fun showPolyLine(polyline: String) {
+        googleMap?.addPolyline(PolylineOptions().addAll(PolyUtil.decode(polyline)))
+    }
+
+    override fun onMarkerClick(marker: Marker): Boolean {
+
+        googleMap?.animateCamera(CameraUpdateFactory.newLatLng(marker.position))
+        viewModel.onMarkerClick(marker.position.latitude, marker.position.longitude)
+
+        return false
     }
 }
