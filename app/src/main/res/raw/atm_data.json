@@ -1,0 +1,1631 @@
+[
+  {
+    "objectId": "sk_281",
+    "address": {
+      "street": "Hodžovo nám. 2",
+      "zipCode": "811 03",
+      "city": "Bratislava",
+      "district": "Bratislavský kraj",
+      "federalState": "Bratislava I",
+      "countryCode": "SK"
+    },
+    "location": {
+      "latitude": 48.147401,
+      "longitude": 17.108122
+    },
+    "standalone": false,
+    "category": "INTERNAL",
+    "loadedOn": "2018-10-17T15:45:54.755+0200",
+    "institute": {
+      "name": "SLSP"
+    },
+    "features": [
+      "CashWithDrawal",
+      "AccountBalance",
+      "AccountMovements",
+      "PaymentOrder",
+      "MobileOperators",
+      "ChangePin",
+      "AuthoriseOverdraft",
+      "HourForChildren"
+    ],
+    "origin": "SK"
+  },
+  {
+    "objectId": "sk_214",
+    "address": {
+      "street": "Suché mýto 1",
+      "zipCode": "811 03",
+      "city": "Bratislava",
+      "district": "Bratislavský kraj",
+      "federalState": "Bratislava I",
+      "countryCode": "SK"
+    },
+    "location": {
+      "latitude": 48.1467507,
+      "longitude": 17.107225
+    },
+    "standalone": false,
+    "category": "INTERNAL",
+    "loadedOn": "2018-10-17T15:45:54.755+0200",
+    "institute": {
+      "name": "SLSP"
+    },
+    "features": [
+      "CashWithDrawal",
+      "AccountBalance",
+      "AccountMovements",
+      "PaymentOrder",
+      "MobileOperators",
+      "ChangePin",
+      "AuthoriseOverdraft",
+      "HourForChildren"
+    ],
+    "origin": "SK"
+  },
+  {
+    "objectId": "sk_213",
+    "address": {
+      "street": "Poštová 4",
+      "zipCode": "811 06",
+      "city": "Bratislava",
+      "district": "Bratislavský kraj",
+      "federalState": "Bratislava I",
+      "countryCode": "SK"
+    },
+    "location": {
+      "latitude": 48.146571,
+      "longitude": 17.1094446
+    },
+    "standalone": false,
+    "category": "INTERNAL",
+    "loadedOn": "2018-10-17T15:45:54.755+0200",
+    "institute": {
+      "name": "SLSP"
+    },
+    "features": [
+      "CashWithDrawal",
+      "AccountBalance",
+      "AccountMovements",
+      "PaymentOrder",
+      "MobileOperators",
+      "ChangePin",
+      "AuthoriseOverdraft",
+      "HourForChildren"
+    ],
+    "origin": "SK"
+  },
+  {
+    "objectId": "sk_267",
+    "address": {
+      "street": "Obchodná 52",
+      "zipCode": "811 06",
+      "city": "Bratislava",
+      "district": "Bratislavský kraj",
+      "federalState": "Bratislava I",
+      "countryCode": "SK"
+    },
+    "location": {
+      "latitude": 48.148087,
+      "longitude": 17.111711
+    },
+    "standalone": false,
+    "category": "INTERNAL",
+    "loadedOn": "2018-10-17T15:45:54.755+0200",
+    "institute": {
+      "name": "SLSP"
+    },
+    "features": [
+      "CashWithDrawal",
+      "AccountBalance",
+      "AccountMovements",
+      "PaymentOrder",
+      "MobileOperators",
+      "ChangePin",
+      "AuthoriseOverdraft",
+      "HourForChildren",
+      "TalkingATM"
+    ],
+    "origin": "SK"
+  },
+  {
+    "objectId": "sk_268",
+    "address": {
+      "street": "Obchodná 52",
+      "zipCode": "811 06",
+      "city": "Bratislava",
+      "district": "Bratislavský kraj",
+      "federalState": "Bratislava I",
+      "countryCode": "SK"
+    },
+    "location": {
+      "latitude": 48.148087,
+      "longitude": 17.111711
+    },
+    "standalone": false,
+    "category": "INTERNAL",
+    "loadedOn": "2018-10-17T15:45:54.755+0200",
+    "institute": {
+      "name": "SLSP"
+    },
+    "features": [
+      "CashWithDrawal",
+      "AccountBalance",
+      "AccountMovements",
+      "PaymentOrder",
+      "MobileOperators",
+      "ChangePin",
+      "AuthoriseOverdraft",
+      "HourForChildren",
+      "TalkingATM"
+    ],
+    "origin": "SK"
+  },
+  {
+    "objectId": "sk_208",
+    "address": {
+      "street": "Kamenné námestie 1",
+      "zipCode": "811 08",
+      "city": "Bratislava",
+      "district": "Bratislavský kraj",
+      "federalState": "Bratislava I",
+      "countryCode": "SK"
+    },
+    "location": {
+      "latitude": 48.1449006,
+      "longitude": 17.1143196
+    },
+    "standalone": false,
+    "category": "INTERNAL",
+    "loadedOn": "2018-10-17T15:45:54.755+0200",
+    "institute": {
+      "name": "SLSP"
+    },
+    "features": [
+      "CashWithDrawal",
+      "AccountBalance",
+      "AccountMovements",
+      "PaymentOrder",
+      "MobileOperators",
+      "ChangePin",
+      "AuthoriseOverdraft",
+      "HourForChildren"
+    ],
+    "origin": "SK"
+  },
+  {
+    "objectId": "sk_135",
+    "address": {
+      "street": "Nám. SNP 18",
+      "zipCode": "815 76",
+      "city": "Bratislava",
+      "district": "Bratislavský kraj",
+      "federalState": "Bratislava I",
+      "countryCode": "SK"
+    },
+    "location": {
+      "latitude": 48.1441266,
+      "longitude": 17.1133411
+    },
+    "standalone": false,
+    "category": "INTERNAL",
+    "loadedOn": "2018-10-17T15:45:54.755+0200",
+    "institute": {
+      "name": "SLSP"
+    },
+    "features": [
+      "CashWithDrawal",
+      "AccountBalance",
+      "AccountMovements",
+      "PaymentOrder",
+      "MobileOperators",
+      "ChangePin",
+      "AuthoriseOverdraft",
+      "EInvoices",
+      "HourForChildren",
+      "TalkingATM"
+    ],
+    "origin": "SK"
+  },
+  {
+    "objectId": "sk_134",
+    "address": {
+      "street": "Nám. SNP 18",
+      "zipCode": "815 76",
+      "city": "Bratislava",
+      "district": "Bratislavský kraj",
+      "federalState": "Bratislava I",
+      "countryCode": "SK"
+    },
+    "location": {
+      "latitude": 48.1441266,
+      "longitude": 17.1133572
+    },
+    "standalone": false,
+    "category": "INTERNAL",
+    "loadedOn": "2018-10-17T15:45:54.755+0200",
+    "institute": {
+      "name": "SLSP"
+    },
+    "features": [
+      "CashWithDrawal",
+      "AccountBalance",
+      "AccountMovements",
+      "PaymentOrder",
+      "MobileOperators",
+      "ChangePin",
+      "AuthoriseOverdraft",
+      "EInvoices",
+      "HourForChildren",
+      "TalkingATM"
+    ],
+    "origin": "SK"
+  },
+  {
+    "objectId": "sk_123",
+    "address": {
+      "street": "Kýčerského 1",
+      "zipCode": "811 04",
+      "city": "Bratislava",
+      "district": "Bratislavský kraj",
+      "federalState": "Bratislava I",
+      "countryCode": "SK"
+    },
+    "location": {
+      "latitude": 48.155213,
+      "longitude": 17.110423
+    },
+    "standalone": false,
+    "category": "INTERNAL",
+    "loadedOn": "2018-10-17T15:45:54.755+0200",
+    "institute": {
+      "name": "SLSP"
+    },
+    "features": [
+      "CashWithDrawal",
+      "AccountBalance",
+      "AccountMovements",
+      "PaymentOrder",
+      "MobileOperators",
+      "ChangePin",
+      "AuthoriseOverdraft",
+      "HourForChildren",
+      "TalkingATM"
+    ],
+    "origin": "SK"
+  },
+  {
+    "objectId": "sk_189",
+    "address": {
+      "street": "Štúrova 11",
+      "zipCode": "811 02",
+      "city": "Bratislava",
+      "district": "Bratislavský kraj",
+      "federalState": "Bratislava I",
+      "countryCode": "SK"
+    },
+    "location": {
+      "latitude": 48.1426317,
+      "longitude": 17.1144747
+    },
+    "standalone": false,
+    "category": "INTERNAL",
+    "loadedOn": "2018-10-17T15:45:54.755+0200",
+    "institute": {
+      "name": "SLSP"
+    },
+    "features": [
+      "CashWithDrawal",
+      "AccountBalance",
+      "AccountMovements",
+      "PaymentOrder",
+      "MobileOperators",
+      "ChangePin",
+      "AuthoriseOverdraft",
+      "HourForChildren"
+    ],
+    "origin": "SK"
+  },
+  {
+    "objectId": "sk_105",
+    "address": {
+      "street": "Hlboká 2",
+      "zipCode": "811 04",
+      "city": "Bratislava",
+      "district": "Bratislavský kraj",
+      "federalState": "Bratislava I",
+      "countryCode": "SK"
+    },
+    "location": {
+      "latitude": 48.1557227,
+      "longitude": 17.1025157
+    },
+    "standalone": false,
+    "category": "INTERNAL",
+    "loadedOn": "2018-10-17T15:45:54.755+0200",
+    "institute": {
+      "name": "SLSP"
+    },
+    "features": [
+      "CashWithDrawal",
+      "NotAccessibleToPublic",
+      "AccountBalance",
+      "AccountMovements",
+      "PaymentOrder",
+      "MobileOperators",
+      "ChangePin",
+      "AuthoriseOverdraft",
+      "HourForChildren"
+    ],
+    "origin": "SK"
+  },
+  {
+    "objectId": "sk_143",
+    "address": {
+      "street": "Odborárske nám. 8",
+      "zipCode": "811 07",
+      "city": "Bratislava",
+      "district": "Bratislavský kraj",
+      "federalState": "Bratislava I",
+      "countryCode": "SK"
+    },
+    "location": {
+      "latitude": 48.1523121,
+      "longitude": 17.1209478
+    },
+    "standalone": false,
+    "category": "INTERNAL",
+    "loadedOn": "2018-10-17T15:45:54.755+0200",
+    "institute": {
+      "name": "SLSP"
+    },
+    "features": [
+      "CashWithDrawal",
+      "AccountBalance",
+      "AccountMovements",
+      "PaymentOrder",
+      "MobileOperators",
+      "ChangePin",
+      "AuthoriseOverdraft",
+      "HourForChildren"
+    ],
+    "origin": "SK"
+  },
+  {
+    "objectId": "sk_140",
+    "address": {
+      "street": "Nám. A. Dubčeka 1",
+      "zipCode": "811 01",
+      "city": "Bratislava",
+      "district": "Bratislavský kraj",
+      "federalState": "Bratislava I",
+      "countryCode": "SK"
+    },
+    "location": {
+      "latitude": 48.1419287,
+      "longitude": 17.0974195
+    },
+    "standalone": false,
+    "category": "INTERNAL",
+    "loadedOn": "2018-10-17T15:45:54.755+0200",
+    "institute": {
+      "name": "SLSP"
+    },
+    "features": [
+      "CashWithDrawal",
+      "NotAccessibleToPublic",
+      "AccountBalance",
+      "AccountMovements",
+      "PaymentOrder",
+      "MobileOperators",
+      "ChangePin",
+      "AuthoriseOverdraft",
+      "HourForChildren"
+    ],
+    "origin": "SK"
+  },
+  {
+    "objectId": "sk_129",
+    "address": {
+      "street": "Nám. Franza Liszta",
+      "zipCode": "811 04",
+      "city": "Bratislava",
+      "district": "Bratislavský kraj",
+      "federalState": "Bratislava I",
+      "countryCode": "SK"
+    },
+    "location": {
+      "latitude": 48.1585068,
+      "longitude": 17.1062976
+    },
+    "standalone": false,
+    "category": "INTERNAL",
+    "loadedOn": "2018-10-17T15:45:54.755+0200",
+    "institute": {
+      "name": "SLSP"
+    },
+    "features": [
+      "CashWithDrawal",
+      "AccountBalance",
+      "AccountMovements",
+      "PaymentOrder",
+      "MobileOperators",
+      "ChangePin",
+      "AuthoriseOverdraft",
+      "HourForChildren"
+    ],
+    "origin": "SK"
+  },
+  {
+    "objectId": "sk_164",
+    "address": {
+      "street": "Búdková cesta 4",
+      "zipCode": "811 04",
+      "city": "Bratislava",
+      "district": "Bratislavský kraj",
+      "federalState": "Bratislava I",
+      "countryCode": "SK"
+    },
+    "location": {
+      "latitude": 48.1532677,
+      "longitude": 17.091583
+    },
+    "standalone": false,
+    "category": "INTERNAL",
+    "loadedOn": "2018-10-17T15:45:54.755+0200",
+    "institute": {
+      "name": "SLSP"
+    },
+    "features": [
+      "CashWithDrawal",
+      "AccountBalance",
+      "AccountMovements",
+      "PaymentOrder",
+      "MobileOperators",
+      "ChangePin",
+      "AuthoriseOverdraft",
+      "HourForChildren"
+    ],
+    "origin": "SK"
+  },
+  {
+    "objectId": "sk_131",
+    "address": {
+      "street": "Čulenova 6",
+      "zipCode": "811 09",
+      "city": "Bratislava",
+      "district": "Bratislavský kraj",
+      "federalState": "Bratislava I",
+      "countryCode": "SK"
+    },
+    "location": {
+      "latitude": 48.143372,
+      "longitude": 17.1238499
+    },
+    "standalone": false,
+    "category": "INTERNAL",
+    "loadedOn": "2018-10-17T15:45:54.755+0200",
+    "institute": {
+      "name": "SLSP"
+    },
+    "features": [
+      "CashWithDrawal",
+      "AccountBalance",
+      "AccountMovements",
+      "PaymentOrder",
+      "MobileOperators",
+      "ChangePin",
+      "AuthoriseOverdraft",
+      "HourForChildren"
+    ],
+    "origin": "SK"
+  },
+  {
+    "objectId": "sk_269",
+    "address": {
+      "street": "Mlynské nivy 16",
+      "zipCode": "821 09",
+      "city": "Bratislava",
+      "district": "Bratislavský kraj",
+      "federalState": "Bratislava II",
+      "countryCode": "SK"
+    },
+    "location": {
+      "latitude": 48.146001,
+      "longitude": 17.126247
+    },
+    "standalone": false,
+    "category": "INTERNAL",
+    "loadedOn": "2018-10-17T15:45:54.755+0200",
+    "institute": {
+      "name": "SLSP"
+    },
+    "features": [
+      "CashWithDrawal",
+      "AccountBalance",
+      "AccountMovements",
+      "PaymentOrder",
+      "MobileOperators",
+      "ChangePin",
+      "AuthoriseOverdraft",
+      "EInvoices",
+      "HourForChildren",
+      "TalkingATM"
+    ],
+    "origin": "SK"
+  },
+  {
+    "objectId": "sk_13",
+    "address": {
+      "street": "Pribinova 8",
+      "zipCode": "811 09",
+      "city": "Bratislava",
+      "district": "Bratislavský kraj",
+      "federalState": "Bratislava II",
+      "countryCode": "SK"
+    },
+    "location": {
+      "latitude": 48.1400745,
+      "longitude": 17.1217525
+    },
+    "standalone": false,
+    "category": "INTERNAL",
+    "loadedOn": "2018-10-17T15:45:54.755+0200",
+    "institute": {
+      "name": "SLSP"
+    },
+    "features": [
+      "CashDeposit",
+      "CashWithDrawal",
+      "AccountBalance",
+      "AccountMovements",
+      "PaymentOrder",
+      "MobileOperators",
+      "ChangePin",
+      "AuthoriseOverdraft",
+      "HourForChildren",
+      "TalkingATM"
+    ],
+    "origin": "SK"
+  },
+  {
+    "objectId": "sk_239",
+    "address": {
+      "street": "Pribinova 8",
+      "zipCode": "811 09",
+      "city": "Bratislava",
+      "district": "Bratislavský kraj",
+      "federalState": "Bratislava II",
+      "countryCode": "SK"
+    },
+    "location": {
+      "latitude": 48.1394945,
+      "longitude": 17.1224284
+    },
+    "standalone": false,
+    "category": "INTERNAL",
+    "loadedOn": "2018-10-17T15:45:54.755+0200",
+    "institute": {
+      "name": "SLSP"
+    },
+    "features": [
+      "CashWithDrawal",
+      "AccountBalance",
+      "AccountMovements",
+      "PaymentOrder",
+      "MobileOperators",
+      "ChangePin",
+      "AuthoriseOverdraft",
+      "HourForChildren"
+    ],
+    "origin": "SK"
+  },
+  {
+    "objectId": "sk_229",
+    "address": {
+      "street": "Šancová 110",
+      "zipCode": "831 04",
+      "city": "Bratislava",
+      "district": "Bratislavský kraj",
+      "federalState": "Bratislava III",
+      "countryCode": "SK"
+    },
+    "location": {
+      "latitude": 48.1569108,
+      "longitude": 17.1249819
+    },
+    "standalone": false,
+    "category": "INTERNAL",
+    "loadedOn": "2018-10-17T15:45:54.755+0200",
+    "institute": {
+      "name": "SLSP"
+    },
+    "features": [
+      "CashWithDrawal",
+      "AccountBalance",
+      "AccountMovements",
+      "PaymentOrder",
+      "MobileOperators",
+      "ChangePin",
+      "AuthoriseOverdraft",
+      "HourForChildren"
+    ],
+    "origin": "SK"
+  },
+  {
+    "objectId": "sk_274",
+    "address": {
+      "street": "Bottova 6654/7",
+      "zipCode": "811 09",
+      "city": "Bratislava",
+      "district": "Bratislavský kraj",
+      "federalState": "Bratislava II",
+      "countryCode": "SK"
+    },
+    "location": {
+      "latitude": 48.144823,
+      "longitude": 17.128621
+    },
+    "standalone": false,
+    "category": "INTERNAL",
+    "loadedOn": "2018-10-17T15:45:54.755+0200",
+    "institute": {
+      "name": "SLSP"
+    },
+    "features": [
+      "CashWithDrawal",
+      "AccountBalance",
+      "AccountMovements",
+      "PaymentOrder",
+      "MobileOperators",
+      "ChangePin",
+      "AuthoriseOverdraft",
+      "HourForChildren"
+    ],
+    "origin": "SK"
+  },
+  {
+    "objectId": "sk_237",
+    "address": {
+      "street": "Dvořákovo nábrežie 10",
+      "zipCode": "810 06",
+      "city": "Bratislava",
+      "district": "Bratislavský kraj",
+      "federalState": "Bratislava I",
+      "countryCode": "SK"
+    },
+    "location": {
+      "latitude": 48.1413155,
+      "longitude": 17.0890248
+    },
+    "standalone": false,
+    "category": "INTERNAL",
+    "loadedOn": "2018-10-17T15:45:54.755+0200",
+    "institute": {
+      "name": "SLSP"
+    },
+    "features": [
+      "CashWithDrawal",
+      "AccountBalance",
+      "AccountMovements",
+      "PaymentOrder",
+      "MobileOperators",
+      "ChangePin",
+      "AuthoriseOverdraft",
+      "HourForChildren"
+    ],
+    "origin": "SK"
+  },
+  {
+    "objectId": "sk_157",
+    "address": {
+      "street": "Račianska 15",
+      "zipCode": "831 02",
+      "city": "Bratislava",
+      "district": "Bratislavský kraj",
+      "federalState": "Bratislava III",
+      "countryCode": "SK"
+    },
+    "location": {
+      "latitude": 48.1604875,
+      "longitude": 17.1220757
+    },
+    "standalone": false,
+    "category": "INTERNAL",
+    "loadedOn": "2018-10-17T15:45:54.755+0200",
+    "institute": {
+      "name": "SLSP"
+    },
+    "features": [
+      "CashWithDrawal",
+      "AccountBalance",
+      "AccountMovements",
+      "PaymentOrder",
+      "MobileOperators",
+      "ChangePin",
+      "AuthoriseOverdraft",
+      "HourForChildren"
+    ],
+    "origin": "SK"
+  },
+  {
+    "objectId": "sk_14",
+    "address": {
+      "street": "Einsteinova 18",
+      "zipCode": "851 01",
+      "city": "Bratislava",
+      "district": "Bratislavský kraj",
+      "federalState": "Bratislava V",
+      "countryCode": "SK"
+    },
+    "location": {
+      "latitude": 48.1324059,
+      "longitude": 17.1076481
+    },
+    "standalone": false,
+    "category": "INTERNAL",
+    "loadedOn": "2018-10-17T15:45:54.755+0200",
+    "institute": {
+      "name": "SLSP"
+    },
+    "features": [
+      "CashDeposit",
+      "CashWithDrawal",
+      "AccountBalance",
+      "AccountMovements",
+      "PaymentOrder",
+      "MobileOperators",
+      "ChangePin",
+      "AuthoriseOverdraft",
+      "HourForChildren",
+      "TalkingATM"
+    ],
+    "origin": "SK"
+  },
+  {
+    "objectId": "sk_4",
+    "address": {
+      "street": "Einsteinova 24",
+      "zipCode": "851 01",
+      "city": "Bratislava",
+      "district": "Bratislavský kraj",
+      "federalState": "Bratislava V",
+      "countryCode": "SK"
+    },
+    "location": {
+      "latitude": 48.1324059,
+      "longitude": 17.1076481
+    },
+    "standalone": false,
+    "category": "INTERNAL",
+    "loadedOn": "2018-10-17T15:45:54.755+0200",
+    "institute": {
+      "name": "SLSP"
+    },
+    "features": [
+      "CashDeposit",
+      "CashWithDrawal",
+      "AccountBalance",
+      "AccountMovements",
+      "PaymentOrder",
+      "MobileOperators",
+      "ChangePin",
+      "AuthoriseOverdraft",
+      "HourForChildren",
+      "TalkingATM"
+    ],
+    "origin": "SK"
+  },
+  {
+    "objectId": "sk_261",
+    "address": {
+      "street": "Metodova 6",
+      "zipCode": "821 08",
+      "city": "Bratislava",
+      "district": "Bratislavský kraj",
+      "federalState": "Bratislava II",
+      "countryCode": "SK"
+    },
+    "location": {
+      "latitude": 48.1570539,
+      "longitude": 17.1292949
+    },
+    "standalone": false,
+    "category": "INTERNAL",
+    "loadedOn": "2018-10-17T15:45:54.755+0200",
+    "institute": {
+      "name": "SLSP"
+    },
+    "features": [
+      "CashWithDrawal",
+      "AccountBalance",
+      "AccountMovements",
+      "PaymentOrder",
+      "MobileOperators",
+      "ChangePin",
+      "AuthoriseOverdraft",
+      "HourForChildren",
+      "TalkingATM"
+    ],
+    "origin": "SK"
+  },
+  {
+    "objectId": "sk_11",
+    "address": {
+      "street": "Metodova 6",
+      "zipCode": "821 08",
+      "city": "Bratislava",
+      "district": "Bratislavský kraj",
+      "federalState": "Bratislava II",
+      "countryCode": "SK"
+    },
+    "location": {
+      "latitude": 48.1570683,
+      "longitude": 17.1294236
+    },
+    "standalone": false,
+    "category": "INTERNAL",
+    "loadedOn": "2018-10-17T15:45:54.755+0200",
+    "institute": {
+      "name": "SLSP"
+    },
+    "features": [
+      "CashDeposit",
+      "CashWithDrawal",
+      "AccountBalance",
+      "AccountMovements",
+      "PaymentOrder",
+      "MobileOperators",
+      "ChangePin",
+      "AuthoriseOverdraft",
+      "HourForChildren",
+      "TalkingATM"
+    ],
+    "origin": "SK"
+  },
+  {
+    "objectId": "sk_235",
+    "address": {
+      "street": "Stromová 9",
+      "zipCode": "831 01",
+      "city": "Bratislava",
+      "district": "Bratislavský kraj",
+      "federalState": "Bratislava III",
+      "countryCode": "SK"
+    },
+    "location": {
+      "latitude": 48.1650335,
+      "longitude": 17.0954669
+    },
+    "standalone": false,
+    "category": "INTERNAL",
+    "loadedOn": "2018-10-17T15:45:54.755+0200",
+    "institute": {
+      "name": "SLSP"
+    },
+    "features": [
+      "CashWithDrawal",
+      "AccountBalance",
+      "AccountMovements",
+      "PaymentOrder",
+      "MobileOperators",
+      "ChangePin",
+      "AuthoriseOverdraft",
+      "HourForChildren"
+    ],
+    "origin": "SK"
+  },
+  {
+    "objectId": "sk_215",
+    "address": {
+      "street": "Košická 58",
+      "zipCode": "821 08",
+      "city": "Bratislava",
+      "district": "Bratislavský kraj",
+      "federalState": "Bratislava II",
+      "countryCode": "SK"
+    },
+    "location": {
+      "latitude": 48.1522799,
+      "longitude": 17.1368694
+    },
+    "standalone": false,
+    "category": "INTERNAL",
+    "loadedOn": "2018-10-17T15:45:54.755+0200",
+    "institute": {
+      "name": "SLSP"
+    },
+    "features": [
+      "CashWithDrawal",
+      "AccountBalance",
+      "AccountMovements",
+      "PaymentOrder",
+      "MobileOperators",
+      "ChangePin",
+      "AuthoriseOverdraft",
+      "HourForChildren"
+    ],
+    "origin": "SK"
+  },
+  {
+    "objectId": "sk_257",
+    "address": {
+      "street": "Miletičova",
+      "zipCode": "821 08",
+      "city": "Bratislava",
+      "district": "Bratislavský kraj",
+      "federalState": "Bratislava II",
+      "countryCode": "SK"
+    },
+    "location": {
+      "latitude": 48.1537329,
+      "longitude": 17.1364188
+    },
+    "standalone": false,
+    "category": "INTERNAL",
+    "loadedOn": "2018-10-17T15:45:54.755+0200",
+    "institute": {
+      "name": "SLSP"
+    },
+    "features": [
+      "CashWithDrawal",
+      "AccountBalance",
+      "AccountMovements",
+      "PaymentOrder",
+      "MobileOperators",
+      "ChangePin",
+      "AuthoriseOverdraft",
+      "HourForChildren"
+    ],
+    "origin": "SK"
+  },
+  {
+    "objectId": "sk_154",
+    "address": {
+      "street": "Nábr. L. Svobodu 9",
+      "zipCode": "811 02",
+      "city": "Bratislava",
+      "district": "Bratislavský kraj",
+      "federalState": "Bratislava IV",
+      "countryCode": "SK"
+    },
+    "location": {
+      "latitude": 48.1446351,
+      "longitude": 17.0785775
+    },
+    "standalone": false,
+    "category": "INTERNAL",
+    "loadedOn": "2018-10-17T15:45:54.755+0200",
+    "institute": {
+      "name": "SLSP"
+    },
+    "features": [
+      "CashWithDrawal",
+      "AccountBalance",
+      "AccountMovements",
+      "PaymentOrder",
+      "MobileOperators",
+      "ChangePin",
+      "AuthoriseOverdraft",
+      "HourForChildren",
+      "TalkingATM"
+    ],
+    "origin": "SK"
+  },
+  {
+    "objectId": "sk_243",
+    "address": {
+      "street": "Odbojárov 9",
+      "zipCode": "831 04",
+      "city": "Bratislava",
+      "district": "Bratislavský kraj",
+      "federalState": "Bratislava III",
+      "countryCode": "SK"
+    },
+    "location": {
+      "latitude": 48.1595231,
+      "longitude": 17.134949
+    },
+    "standalone": false,
+    "category": "INTERNAL",
+    "loadedOn": "2018-10-17T15:45:54.755+0200",
+    "institute": {
+      "name": "SLSP"
+    },
+    "features": [
+      "CashWithDrawal",
+      "AccountBalance",
+      "AccountMovements",
+      "PaymentOrder",
+      "MobileOperators",
+      "ChangePin",
+      "AuthoriseOverdraft",
+      "HourForChildren"
+    ],
+    "origin": "SK"
+  },
+  {
+    "objectId": "sk_122",
+    "address": {
+      "street": "Vajnorská 25",
+      "zipCode": "832 56",
+      "city": "Bratislava",
+      "district": "Bratislavský kraj",
+      "federalState": "Bratislava III",
+      "countryCode": "SK"
+    },
+    "location": {
+      "latitude": 48.162525,
+      "longitude": 17.1318327
+    },
+    "standalone": false,
+    "category": "INTERNAL",
+    "loadedOn": "2018-10-17T15:45:54.755+0200",
+    "institute": {
+      "name": "SLSP"
+    },
+    "features": [
+      "CashWithDrawal",
+      "AccountBalance",
+      "AccountMovements",
+      "PaymentOrder",
+      "MobileOperators",
+      "ChangePin",
+      "AuthoriseOverdraft",
+      "HourForChildren"
+    ],
+    "origin": "SK"
+  },
+  {
+    "objectId": "sk_170",
+    "address": {
+      "street": "Farského 26",
+      "zipCode": "851 01",
+      "city": "Bratislava",
+      "district": "Bratislavský kraj",
+      "federalState": "Bratislava V",
+      "countryCode": "SK"
+    },
+    "location": {
+      "latitude": 48.1276638,
+      "longitude": 17.1154416
+    },
+    "standalone": false,
+    "category": "INTERNAL",
+    "loadedOn": "2018-10-17T15:45:54.755+0200",
+    "institute": {
+      "name": "SLSP"
+    },
+    "features": [
+      "CashWithDrawal",
+      "AccountBalance",
+      "AccountMovements",
+      "PaymentOrder",
+      "MobileOperators",
+      "ChangePin",
+      "AuthoriseOverdraft",
+      "HourForChildren"
+    ],
+    "origin": "SK"
+  },
+  {
+    "objectId": "sk_141",
+    "address": {
+      "street": "Záhradnícka 95",
+      "zipCode": "821 08",
+      "city": "Bratislava",
+      "district": "Bratislavský kraj",
+      "federalState": "Bratislava II",
+      "countryCode": "SK"
+    },
+    "location": {
+      "latitude": 48.1559636,
+      "longitude": 17.1400371
+    },
+    "standalone": false,
+    "category": "INTERNAL",
+    "loadedOn": "2018-10-17T15:45:54.755+0200",
+    "institute": {
+      "name": "SLSP"
+    },
+    "features": [
+      "CashWithDrawal",
+      "AccountBalance",
+      "AccountMovements",
+      "PaymentOrder",
+      "MobileOperators",
+      "ChangePin",
+      "AuthoriseOverdraft",
+      "HourForChildren",
+      "TalkingATM"
+    ],
+    "origin": "SK"
+  },
+  {
+    "objectId": "sk_139",
+    "address": {
+      "street": "Šustekova 2",
+      "zipCode": "851 04",
+      "city": "Bratislava",
+      "district": "Bratislavský kraj",
+      "federalState": "Bratislava V",
+      "countryCode": "SK"
+    },
+    "location": {
+      "latitude": 48.128422,
+      "longitude": 17.1241622
+    },
+    "standalone": false,
+    "category": "INTERNAL",
+    "loadedOn": "2018-10-17T15:45:54.755+0200",
+    "institute": {
+      "name": "SLSP"
+    },
+    "features": [
+      "CashWithDrawal",
+      "AccountBalance",
+      "AccountMovements",
+      "PaymentOrder",
+      "MobileOperators",
+      "ChangePin",
+      "AuthoriseOverdraft",
+      "HourForChildren",
+      "TalkingATM"
+    ],
+    "origin": "SK"
+  },
+  {
+    "objectId": "sk_158",
+    "address": {
+      "street": "Mlynská dolina",
+      "zipCode": "811 04",
+      "city": "Bratislava",
+      "district": "Bratislavský kraj",
+      "federalState": "Bratislava I",
+      "countryCode": "SK"
+    },
+    "location": {
+      "latitude": 48.1497067,
+      "longitude": 17.0717058
+    },
+    "standalone": false,
+    "category": "INTERNAL",
+    "loadedOn": "2018-10-17T15:45:54.755+0200",
+    "institute": {
+      "name": "SLSP"
+    },
+    "features": [
+      "CashWithDrawal",
+      "AccountBalance",
+      "AccountMovements",
+      "PaymentOrder",
+      "MobileOperators",
+      "ChangePin",
+      "AuthoriseOverdraft",
+      "HourForChildren"
+    ],
+    "origin": "SK"
+  },
+  {
+    "objectId": "sk_224",
+    "address": {
+      "street": "Hálkova 1",
+      "zipCode": "831 03",
+      "city": "Bratislava",
+      "district": "Bratislavský kraj",
+      "federalState": "Bratislava III",
+      "countryCode": "SK"
+    },
+    "location": {
+      "latitude": 48.1699595,
+      "longitude": 17.1290729
+    },
+    "standalone": false,
+    "category": "INTERNAL",
+    "loadedOn": "2018-10-17T15:45:54.755+0200",
+    "institute": {
+      "name": "SLSP"
+    },
+    "features": [
+      "CashWithDrawal",
+      "AccountBalance",
+      "AccountMovements",
+      "PaymentOrder",
+      "MobileOperators",
+      "ChangePin",
+      "AuthoriseOverdraft",
+      "HourForChildren"
+    ],
+    "origin": "SK"
+  },
+  {
+    "objectId": "sk_231",
+    "address": {
+      "street": "Bajkalská 9",
+      "zipCode": "830 00",
+      "city": "Bratislava",
+      "district": "Bratislavský kraj",
+      "federalState": "Bratislava III",
+      "countryCode": "SK"
+    },
+    "location": {
+      "latitude": 48.1629511,
+      "longitude": 17.1396804
+    },
+    "standalone": false,
+    "category": "INTERNAL",
+    "loadedOn": "2018-10-17T15:45:54.755+0200",
+    "institute": {
+      "name": "SLSP"
+    },
+    "features": [
+      "CashWithDrawal",
+      "AccountBalance",
+      "AccountMovements",
+      "PaymentOrder",
+      "MobileOperators",
+      "ChangePin",
+      "AuthoriseOverdraft",
+      "HourForChildren"
+    ],
+    "origin": "SK"
+  },
+  {
+    "objectId": "sk_156",
+    "address": {
+      "street": "Nám. Hraničiarov 1/B",
+      "zipCode": "851 03",
+      "city": "Bratislava",
+      "district": "Bratislavský kraj",
+      "federalState": "Bratislava V",
+      "countryCode": "SK"
+    },
+    "location": {
+      "latitude": 48.1234938,
+      "longitude": 17.1163439
+    },
+    "standalone": false,
+    "category": "INTERNAL",
+    "loadedOn": "2018-10-17T15:45:54.755+0200",
+    "institute": {
+      "name": "SLSP"
+    },
+    "features": [
+      "CashWithDrawal",
+      "AccountBalance",
+      "AccountMovements",
+      "PaymentOrder",
+      "MobileOperators",
+      "ChangePin",
+      "AuthoriseOverdraft",
+      "HourForChildren",
+      "TalkingATM"
+    ],
+    "origin": "SK"
+  },
+  {
+    "objectId": "sk_279",
+    "address": {
+      "street": "Bajkalská 19/A",
+      "zipCode": "821 05",
+      "city": "Bratislava",
+      "district": "Bratislavský kraj",
+      "federalState": "Bratislava II",
+      "countryCode": "SK"
+    },
+    "location": {
+      "latitude": 48.159259,
+      "longitude": 17.143871
+    },
+    "standalone": false,
+    "category": "INTERNAL",
+    "loadedOn": "2018-10-17T15:45:54.755+0200",
+    "institute": {
+      "name": "SLSP"
+    },
+    "features": [
+      "CashWithDrawal",
+      "AccountBalance",
+      "AccountMovements",
+      "PaymentOrder",
+      "MobileOperators",
+      "ChangePin",
+      "AuthoriseOverdraft",
+      "HourForChildren",
+      "TalkingATM"
+    ],
+    "origin": "SK"
+  },
+  {
+    "objectId": "sk_159",
+    "address": {
+      "street": "Hálova 5",
+      "zipCode": "851 01",
+      "city": "Bratislava",
+      "district": "Bratislavský kraj",
+      "federalState": "Bratislava V",
+      "countryCode": "SK"
+    },
+    "location": {
+      "latitude": 48.1222283,
+      "longitude": 17.1065015
+    },
+    "standalone": false,
+    "category": "INTERNAL",
+    "loadedOn": "2018-10-17T15:45:54.755+0200",
+    "institute": {
+      "name": "SLSP"
+    },
+    "features": [
+      "CashWithDrawal",
+      "AccountBalance",
+      "AccountMovements",
+      "PaymentOrder",
+      "MobileOperators",
+      "ChangePin",
+      "AuthoriseOverdraft",
+      "HourForChildren",
+      "TalkingATM"
+    ],
+    "origin": "SK"
+  },
+  {
+    "objectId": "sk_209",
+    "address": {
+      "street": "Blagoevova 9",
+      "zipCode": "851 04",
+      "city": "Bratislava",
+      "district": "Bratislavský kraj",
+      "federalState": "Bratislava V",
+      "countryCode": "SK"
+    },
+    "location": {
+      "latitude": 48.1259003,
+      "longitude": 17.129311
+    },
+    "standalone": false,
+    "category": "INTERNAL",
+    "loadedOn": "2018-10-17T15:45:54.755+0200",
+    "institute": {
+      "name": "SLSP"
+    },
+    "features": [
+      "CashWithDrawal",
+      "AccountBalance",
+      "AccountMovements",
+      "PaymentOrder",
+      "MobileOperators",
+      "ChangePin",
+      "AuthoriseOverdraft",
+      "HourForChildren"
+    ],
+    "origin": "SK"
+  },
+  {
+    "objectId": "sk_234",
+    "address": {
+      "street": "Staré Grunty",
+      "zipCode": "841 04",
+      "city": "Bratislava",
+      "district": "Bratislavský kraj",
+      "federalState": "Bratislava IV",
+      "countryCode": "SK"
+    },
+    "location": {
+      "latitude": 48.157741,
+      "longitude": 17.0696211
+    },
+    "standalone": false,
+    "category": "INTERNAL",
+    "loadedOn": "2018-10-17T15:45:54.755+0200",
+    "institute": {
+      "name": "SLSP"
+    },
+    "features": [
+      "CashWithDrawal",
+      "AccountBalance",
+      "AccountMovements",
+      "PaymentOrder",
+      "MobileOperators",
+      "ChangePin",
+      "AuthoriseOverdraft",
+      "HourForChildren"
+    ],
+    "origin": "SK"
+  },
+  {
+    "objectId": "sk_196",
+    "address": {
+      "street": "Kopčianska 1",
+      "zipCode": "851 01",
+      "city": "Bratislava",
+      "district": "Bratislavský kraj",
+      "federalState": "Bratislava V",
+      "countryCode": "SK"
+    },
+    "location": {
+      "latitude": 48.1219578,
+      "longitude": 17.0988035
+    },
+    "standalone": false,
+    "category": "INTERNAL",
+    "loadedOn": "2018-10-17T15:45:54.755+0200",
+    "institute": {
+      "name": "SLSP"
+    },
+    "features": [
+      "CashWithDrawal",
+      "AccountBalance",
+      "AccountMovements",
+      "PaymentOrder",
+      "MobileOperators",
+      "ChangePin",
+      "AuthoriseOverdraft",
+      "HourForChildren",
+      "TalkingATM"
+    ],
+    "origin": "SK"
+  },
+  {
+    "objectId": "sk_121",
+    "address": {
+      "street": "Račianska 44",
+      "zipCode": "831 02",
+      "city": "Bratislava",
+      "district": "Bratislavský kraj",
+      "federalState": "Bratislava III",
+      "countryCode": "SK"
+    },
+    "location": {
+      "latitude": 48.1728685,
+      "longitude": 17.1274735
+    },
+    "standalone": false,
+    "category": "INTERNAL",
+    "loadedOn": "2018-10-17T15:45:54.755+0200",
+    "institute": {
+      "name": "SLSP"
+    },
+    "features": [
+      "CashWithDrawal",
+      "AccountBalance",
+      "AccountMovements",
+      "PaymentOrder",
+      "MobileOperators",
+      "ChangePin",
+      "AuthoriseOverdraft",
+      "HourForChildren"
+    ],
+    "origin": "SK"
+  },
+  {
+    "objectId": "sk_173",
+    "address": {
+      "street": "Vajnorská 100",
+      "zipCode": "831 03",
+      "city": "Bratislava",
+      "district": "Bratislavský kraj",
+      "federalState": "Bratislava III",
+      "countryCode": "SK"
+    },
+    "location": {
+      "latitude": 48.1682415,
+      "longitude": 17.1383689
+    },
+    "standalone": false,
+    "category": "INTERNAL",
+    "loadedOn": "2018-10-17T15:45:54.755+0200",
+    "institute": {
+      "name": "SLSP"
+    },
+    "features": [
+      "CashWithDrawal",
+      "AccountBalance",
+      "AccountMovements",
+      "PaymentOrder",
+      "MobileOperators",
+      "ChangePin",
+      "AuthoriseOverdraft",
+      "HourForChildren"
+    ],
+    "origin": "SK"
+  },
+  {
+    "objectId": "sk_115",
+    "address": {
+      "street": "Bajkalská 30",
+      "zipCode": "821 05",
+      "city": "Bratislava",
+      "district": "Bratislavský kraj",
+      "federalState": "Bratislava II",
+      "countryCode": "SK"
+    },
+    "location": {
+      "latitude": 48.1450133,
+      "longitude": 17.1502349
+    },
+    "standalone": false,
+    "category": "INTERNAL",
+    "loadedOn": "2018-10-17T15:45:54.755+0200",
+    "institute": {
+      "name": "SLSP"
+    },
+    "features": [
+      "CashWithDrawal",
+      "AccountBalance",
+      "AccountMovements",
+      "PaymentOrder",
+      "MobileOperators",
+      "ChangePin",
+      "AuthoriseOverdraft",
+      "HourForChildren",
+      "TalkingATM"
+    ],
+    "origin": "SK"
+  },
+  {
+    "objectId": "sk_161",
+    "address": {
+      "street": "Ševčenkova 32",
+      "zipCode": "851 01",
+      "city": "Bratislava",
+      "district": "Bratislavský kraj",
+      "federalState": "Bratislava V",
+      "countryCode": "SK"
+    },
+    "location": {
+      "latitude": 48.1202243,
+      "longitude": 17.1009429
+    },
+    "standalone": false,
+    "category": "INTERNAL",
+    "loadedOn": "2018-10-17T15:45:54.755+0200",
+    "institute": {
+      "name": "SLSP"
+    },
+    "features": [
+      "CashWithDrawal",
+      "AccountBalance",
+      "AccountMovements",
+      "PaymentOrder",
+      "MobileOperators",
+      "ChangePin",
+      "AuthoriseOverdraft",
+      "HourForChildren"
+    ],
+    "origin": "SK"
+  },
+  {
+    "objectId": "sk_150",
+    "address": {
+      "street": "Vajnorská 100",
+      "zipCode": "831 03",
+      "city": "Bratislava",
+      "district": "Bratislavský kraj",
+      "federalState": "Bratislava III",
+      "countryCode": "SK"
+    },
+    "location": {
+      "latitude": 48.1683874,
+      "longitude": 17.1390815
+    },
+    "standalone": false,
+    "category": "INTERNAL",
+    "loadedOn": "2018-10-17T15:45:54.755+0200",
+    "institute": {
+      "name": "SLSP"
+    },
+    "features": [
+      "CashWithDrawal",
+      "AccountBalance",
+      "AccountMovements",
+      "PaymentOrder",
+      "MobileOperators",
+      "ChangePin",
+      "AuthoriseOverdraft",
+      "HourForChildren",
+      "TalkingATM"
+    ],
+    "origin": "SK"
+  }
+]

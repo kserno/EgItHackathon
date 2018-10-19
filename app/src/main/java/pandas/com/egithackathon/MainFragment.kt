@@ -10,5 +10,10 @@ import com.google.ar.sceneform.ux.ArFragment
 class MainFragment: ArFragment() {
 
 
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
 
+
+
+    }
 }
