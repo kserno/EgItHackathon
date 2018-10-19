@@ -30,6 +30,7 @@ dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation 'androidx.appcompat:appcompat:1.0.0'
 
+
     implementation kotlinDependencies.lib
 
     implementation navigationDependencies.fragment
@@ -54,6 +55,9 @@ dependencies {
 
     implementation calendarProviderDependencies.lib
     implementation dexterDependencies.lib
+
+    implementation 'com.google.ar:core:1.5.0'
+
 
 
 }
