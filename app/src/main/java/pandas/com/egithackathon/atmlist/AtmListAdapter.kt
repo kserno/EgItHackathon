@@ -46,7 +46,6 @@ class AtmListAdapter: RecyclerView.Adapter<AtmListAdapter.AtmItemViewHolder>() {
         fun bind(item : AtmModel) {
             binding?.viewModel?.atmModel?.value = item
 
-
             binding?.executePendingBindings()
         }
 

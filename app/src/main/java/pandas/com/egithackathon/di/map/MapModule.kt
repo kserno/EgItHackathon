@@ -6,6 +6,7 @@ import dagger.Module
 import dagger.Provides
 import pandas.com.egithackathon.DataService
 import pandas.com.egithackathon.IDataService
+import pandas.com.egithackathon.location.LocationProvider
 import pandas.com.egithackathon.map.MapView
 import pandas.com.egithackathon.map.MapViewModel
 import java.lang.IllegalArgumentException
@@ -20,12 +21,13 @@ class MapModule(
 )
 class MapViewModelFactory @Inject constructor(
     val mapView: MapView,
-    val dataService: IDataService
+    val dataService: IDataService,
+    val locationProvider: LocationProvider
 ): ViewModelProvider.Factory {
 
     override fun <T : ViewModel?> create(modelClass: Class<T>): T {
         if (modelClass.isAssignableFrom(MapViewModel::class.java)) {
-            return MapViewModel(mapView, dataService) as T
+            return MapViewModel(mapView, dataService, locationProvider) as T
         } else {
             throw IllegalArgumentException()
         }

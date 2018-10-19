@@ -3,6 +3,7 @@ package pandas.com.egithackathon
 import android.content.Context
 import com.squareup.moshi.Moshi
 import com.squareup.moshi.Types
+import pandas.com.egithackathon.location.LocationProvider
 import pandas.com.egithackathon.model.Atm
 import pandas.com.egithackathon.model.AtmMapper
 import pandas.com.egithackathon.model.AtmModel
@@ -13,7 +14,8 @@ import javax.inject.Inject
  */
 class DataService @Inject constructor(
         val context: Context,
-        val moshi: Moshi
+        val moshi: Moshi,
+        val locationProvider: LocationProvider
 ): IDataService {
 
     override fun getNearbyAtms(): List<AtmModel> {

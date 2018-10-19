@@ -23,6 +23,7 @@ class AtmListViewModelFactory @Inject constructor(
         val atmListView: AtmListView,
         val dataService: IDataService
 ): ViewModelProvider.Factory {
+
     override fun <T : ViewModel?> create(modelClass: Class<T>): T {
         if (modelClass.isAssignableFrom(AtmListViewModel::class.java)) {
             return AtmListViewModel(atmListView, dataService) as T
