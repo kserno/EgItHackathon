@@ -2,6 +2,9 @@
     package="pandas.com.egithackathon">
 
     <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+
     <uses-feature android:name="android.hardware.camera.ar" />
 
     <application
@@ -23,6 +26,15 @@
         </activity>
 
         <meta-data android:name="com.google.ar.core" android:value="required" />
+
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCaZlnQ3E9vT8TIcFgNckZdrfpHVODapb4"/>
+
+        <meta-data
+        android:name="com.google.android.nearby.messages.API_KEY"
+        android:value="AIzaSyCaZlnQ3E9vT8TIcFgNckZdrfpHVODapb4" />
 
     </application>
 </manifest>

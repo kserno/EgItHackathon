@@ -1,12 +1,16 @@
 package pandas.com.egithackathon
 
 import android.Manifest
+import android.location.Location
 import android.os.Bundle
+import com.google.android.gms.location.FusedLocationProviderClient
+import com.google.android.gms.location.LocationServices
 import com.karumi.dexter.Dexter
-import com.google.android.material.snackbar.Snackbar
-import com.google.ar.core.ArCoreApk
-import com.karumi.dexter.listener.single.SnackbarOnDeniedPermissionListener
-import com.karumi.dexter.listener.single.PermissionListener
+
+import com.karumi.dexter.listener.multi.DialogOnAnyDeniedMultiplePermissionsListener
+import com.karumi.dexter.listener.multi.MultiplePermissionsListener
+
+
 
 
 
@@ -15,36 +19,41 @@ import com.karumi.dexter.listener.single.PermissionListener
  */
 class MainActivity: BaseActivity() {
 
+    private lateinit var fusedLocationClient: FusedLocationProviderClient
 
-    override fun onResume() {
-        super.onResume()
+    var lastLocation: Location? = null
 
-    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val snackbarPermissionListener = SnackbarOnDeniedPermissionListener.Builder
-                .with(window.decorView, "Camera access is needed to take pictures of your dog")
-                .withOpenSettingsButton("Settings")
-                .withCallback(object : Snackbar.Callback() {
-                    override fun onShown(snackbar: Snackbar?) {
-                        // Event handler for when the given Snackbar is visible
-                    }
+        fusedLocationClient = LocationServices.getFusedLocationProviderClient(this)
 
-                    override fun onDismissed(snackbar: Snackbar?, event: Int) {
-                        // Event handler for when the given Snackbar has been dismissed
-                    }
-                }).build()
+        val dialogMultiplePermissionsListener = DialogOnAnyDeniedMultiplePermissionsListener.Builder
+                .withContext(this)
+                .withTitle("Camera & location permission")
+                .withMessage("Both camera and location permission are needed.")
+                .withButtonText("ok")
+                .build()
+
+
 
         Dexter.withActivity(this)
-                .withPermission(Manifest.permission.CAMERA)
-                .withListener(snackbarPermissionListener)
+                .withPermissions(
+                        Manifest.permission.CAMERA,
+                        Manifest.permission.ACCESS_COARSE_LOCATION,
+                        Manifest.permission.ACCESS_FINE_LOCATION
+                )
+                .withListener(dialogMultiplePermissionsListener)
                 .check()
 
 
+
+
+
     }
+
 
 
 }
