@@ -51,7 +51,7 @@
                                             <option name="values">
                                               <map>
                                                 <entry key="color" value="000000" />
-                                                <entry key="scalingPercent" value="49" />
+                                                <entry key="scalingPercent" value="66" />
                                               </map>
                                             </option>
                                           </PersistentState>
@@ -63,7 +63,7 @@
                                     <map>
                                       <entry key="backgroundAssetType" value="COLOR" />
                                       <entry key="backgroundColor" value="4e97cf" />
-                                      <entry key="foregroundImage" value="D:\_PS\EG\icon.png" />
+                                      <entry key="foregroundImage" value="D:\_PS\EG\icon_with_shadow.png" />
                                     </map>
                                   </option>
                                 </PersistentState>
