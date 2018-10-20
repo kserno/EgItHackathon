@@ -8,16 +8,15 @@ import kotlinx.android.parcel.Parcelize
 /**
  *  Created by filipsollar on 19.10.18
  */
-@JsonClass(generateAdapter = true)
 @Parcelize
 data class AtmModel(
         val objectId: String,
-        val address: Address,
+        val address: String,
         val location: Location,
         val standalone: Boolean,
+        val distance: String,
+        val distanceLen: Float,
         val category: String,
-        val loadedOn: String,
         val institute: Institute,
-        val features: List<String> = emptyList(),
-        val origin: String
+        val features: List<String> = emptyList()
 ): Parcelable

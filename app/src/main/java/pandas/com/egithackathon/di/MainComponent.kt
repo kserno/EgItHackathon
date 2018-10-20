@@ -4,6 +4,7 @@ import android.content.Context
 import com.squareup.moshi.Moshi
 import dagger.Component
 import pandas.com.egithackathon.IDataService
+import pandas.com.egithackathon.location.LocationProvider
 
 /**
  *  Created by filipsollar on 19.10.18
@@ -15,5 +16,6 @@ interface MainComponent {
 
     fun getDataService(): IDataService
     fun getMoshi(): Moshi
+    fun getLocationProvider(): LocationProvider
 
 }
