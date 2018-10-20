@@ -13,6 +13,9 @@ import pandas.com.egithackathon.di.atmlist.AtmListViewModelFactory
 import pandas.com.egithackathon.di.atmlist.DaggerAtmListComponent
 import pandas.com.egithackathon.model.AtmModel
 import javax.inject.Inject
+import androidx.recyclerview.widget.DividerItemDecoration
+import androidx.recyclerview.widget.RecyclerView.HORIZONTAL
+
 
 /**
  *  Created by filipsollar on 19.10.18
@@ -37,9 +40,16 @@ class AtmListFragment: BaseFragment(), AtmListView {
 
         viewModel = ViewModelProviders.of(this, factory).get(AtmListViewModel::class.java)
 
+        // Divider
+        val itemDecor = DividerItemDecoration(activity, HORIZONTAL)
+        itemDecor.setDrawable(resources.getDrawable(R.drawable.divider))
+        recyclerView.addItemDecoration(itemDecor)
+
 
         recyclerView.adapter = adapter
         recyclerView.layoutManager = LinearLayoutManager(context)
+
+
 
         viewModel.atmList.observe(this, Observer<List<AtmModel>> {
             adapter.setData(it)
