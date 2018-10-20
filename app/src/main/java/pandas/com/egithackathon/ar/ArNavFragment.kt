@@ -64,8 +64,6 @@ class ArNavFragment: ArFragment(), ArNavView {
 
         viewModel = ViewModelProviders.of(this, factory).get(ArNavViewModel::class.java)
 
-
-
         for (i in 0 until viewModel.atmList.value!!.size) {
             ViewRenderable.builder()
                     .setView(context, R.layout.renderable_test)

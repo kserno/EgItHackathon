@@ -9,6 +9,7 @@ import com.google.android.gms.location.FusedLocationProviderClient
 import com.google.android.gms.location.LocationServices
 import com.karumi.dexter.Dexter
 import com.karumi.dexter.listener.multi.DialogOnAnyDeniedMultiplePermissionsListener
+import pandas.com.egithackathon.banking.MoneyPicker
 import pandas.com.egithackathon.beacons.BeaconManager
 
 
@@ -58,13 +59,17 @@ class MainActivity : BaseActivity() {
         BeaconManager.registerOnBankomatFoundListener {
             // We are at a bankomat
             Log.d("TAG", "Sme pri bankomate $it! :D")
-            Toast.makeText(this, "Sme pri bankomate $it! :D", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, "Sme pri bankomate $it!", Toast.LENGTH_SHORT).show()
+
+            openMoneyPickerDialog(it)
         }
 
         BeaconManager.registerOnBankomatLeftListener {
             // We are at a bankomat
             Log.d("TAG", "Odisli sme od bankomatu $it :(")
             Toast.makeText(this, "Odisli sme od bankomatu $it :(", Toast.LENGTH_SHORT).show()
+
+            closeMoneyPickerDialog()
         }
     }
 
@@ -75,5 +80,18 @@ class MainActivity : BaseActivity() {
         super.onStop()
     }
 
+    lateinit var dialog: MoneyPicker
+
+    private fun openMoneyPickerDialog(bankomatId: String) {
+        dialog = MoneyPicker()
+        val args = Bundle()
+        args.putString("bankomatId", bankomatId)
+        dialog.arguments = args
+        dialog.show(supportFragmentManager, "NoticeDialogFragment")
+    }
+
+    private fun closeMoneyPickerDialog() {
+        dialog.dismiss()
+    }
 
 }

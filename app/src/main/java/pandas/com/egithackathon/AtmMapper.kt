@@ -39,7 +39,7 @@ object AtmMapper {
                 address,
                 atm.location,
                 atm.standalone,
-                distance.toString() + " m",
+                distance.toInt().toString() + " m",
                 distance,
                 atm.category,
                 atm.institute,

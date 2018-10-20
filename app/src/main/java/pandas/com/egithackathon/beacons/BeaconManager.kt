@@ -13,14 +13,14 @@ object BeaconManager {
     const val THRESHOLD_METERS = 1
     const val LEAVE_MARGIN_METERS = 2
 
-    private val nearbyBankomatsSet = mutableSetOf<Int>()
+    private val nearbyBankomatsSet = mutableSetOf<String>()
 
-    private val onBankomatFoundListeners: MutableList<(Int) -> Unit> = mutableListOf()
-    private val onBankomatLeftListeners: MutableList<(Int) -> Unit> = mutableListOf()
+    private val onBankomatFoundListeners: MutableList<(String) -> Unit> = mutableListOf()
+    private val onBankomatLeftListeners: MutableList<(String) -> Unit> = mutableListOf()
 
     private val messageListener: MessageListener = object : MessageListener() {
         override fun onDistanceChanged(message: Message, distance: Distance) {
-            val bankomatId = String(message.content).toInt()
+            val bankomatId = String(message.content)
 
             Log.i(TAG, "Bankomat $bankomatId distance is ${distance.meters}m with ${distance.accuracy}m acc")
 
@@ -47,20 +47,20 @@ object BeaconManager {
         }
 
         override fun onLost(message: Message) {
-            val bankomatId = String(message.content).toInt()
+            val bankomatId = String(message.content)
 
             Log.i(TAG, "Bankomat $bankomatId lost")
         }
 
         override fun onBleSignalChanged(message: Message, signal: BleSignal) {
-            val bankomatId = String(message.content).toInt()
+            val bankomatId = String(message.content)
 
             Log.i(TAG, "Bankomat $bankomatId signal is ${signal.rssi} rssi with ${signal.txPower} tx power")
         }
 
         override fun onFound(message: Message) {
             // Do something with the message here.
-            val bankomatId = String(message.content).toInt()
+            val bankomatId = String(message.content)
 
             Log.i(TAG, "Message found: $message")
             Log.i(TAG, "Message string: $bankomatId")
@@ -92,13 +92,13 @@ object BeaconManager {
         Nearby.getMessagesClient(activity).unsubscribe(messageListener)
     }
 
-    fun registerOnBankomatFoundListener(onBankomatFound: (Int) -> Unit) {
+    fun registerOnBankomatFoundListener(onBankomatFound: (String) -> Unit) {
         Log.i(TAG, "Bankomat found listener registered")
 
         onBankomatFoundListeners.add(onBankomatFound)
     }
 
-    fun registerOnBankomatLeftListener(onBankomatLeft: (Int) -> Unit) {
+    fun registerOnBankomatLeftListener(onBankomatLeft: (String) -> Unit) {
         Log.i(TAG, "Bankomat left listener registered")
 
         onBankomatLeftListeners.add(onBankomatLeft)

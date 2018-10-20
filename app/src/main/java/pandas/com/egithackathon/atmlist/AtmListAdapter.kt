@@ -14,7 +14,9 @@ import pandas.com.egithackathon.model.AtmModel
 /**
  *  Created by filipsollar on 19.10.18
  */
-class AtmListAdapter: RecyclerView.Adapter<AtmListAdapter.AtmItemViewHolder>() {
+class AtmListAdapter(
+        val listener: Listener
+): RecyclerView.Adapter<AtmListAdapter.AtmItemViewHolder>() {
 
     private var items: List<AtmModel> = emptyList()
 
@@ -41,19 +43,32 @@ class AtmListAdapter: RecyclerView.Adapter<AtmListAdapter.AtmItemViewHolder>() {
             itemView: View
     ) : RecyclerView.ViewHolder(itemView) {
 
+        init {
+            itemView.setOnClickListener {
+                listener.onClick(item)
+            }
+
+        }
+
+        var item: AtmModel? = null
+
         val binding = DataBindingUtil.bind<ItemAtmBinding>(itemView)
                 .apply { this!!.viewModel = AtmItemViewModel() }
 
         fun bind(item : AtmModel) {
-            binding?.viewModel?.atmModel?.value = item
+            this.item = item
 
+            binding?.tvAddress?.text = item.address
+            binding?.tvDistance?.text = item.distance
+            binding?.tvName?.text = item.objectId
 
-            binding?.notifyChange()
-            binding?.executePendingBindings()
         }
 
 
+    }
 
+    interface Listener {
+        fun onClick(model: AtmModel?)
     }
 
 }
