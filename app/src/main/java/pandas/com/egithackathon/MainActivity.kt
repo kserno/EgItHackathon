@@ -3,21 +3,19 @@ package pandas.com.egithackathon
 import android.Manifest
 import android.location.Location
 import android.os.Bundle
+import android.util.Log
+import android.widget.Toast
 import com.google.android.gms.location.FusedLocationProviderClient
 import com.google.android.gms.location.LocationServices
 import com.karumi.dexter.Dexter
-
 import com.karumi.dexter.listener.multi.DialogOnAnyDeniedMultiplePermissionsListener
-import com.karumi.dexter.listener.multi.MultiplePermissionsListener
-
-
-
+import pandas.com.egithackathon.beacons.BeaconManager
 
 
 /**
  *  Created by filipsollar on 19.10.18
  */
-class MainActivity: BaseActivity() {
+class MainActivity : BaseActivity() {
 
     private lateinit var fusedLocationClient: FusedLocationProviderClient
 
@@ -49,11 +47,33 @@ class MainActivity: BaseActivity() {
                 .check()
 
 
-
-
-
     }
 
+    override fun onStart() {
+        super.onStart()
+
+        // Subsribe for beacons
+        BeaconManager.start(this)
+
+        BeaconManager.registerOnBankomatFoundListener {
+            // We are at a bankomat
+            Log.d("TAG", "Sme pri bankomate $it! :D")
+            Toast.makeText(this, "Sme pri bankomate $it! :D", Toast.LENGTH_SHORT).show()
+        }
+
+        BeaconManager.registerOnBankomatLeftListener {
+            // We are at a bankomat
+            Log.d("TAG", "Odisli sme od bankomatu $it :(")
+            Toast.makeText(this, "Odisli sme od bankomatu $it :(", Toast.LENGTH_SHORT).show()
+        }
+    }
+
+    override fun onStop() {
+        // Unsubscribe the beacons
+        BeaconManager.stop(this)
+
+        super.onStop()
+    }
 
 
 }
