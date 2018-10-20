@@ -1,5 +1,6 @@
 package pandas.com.egithackathon.map
 
+import android.graphics.Color
 import android.os.Bundle
 import android.view.View
 import androidx.lifecycle.Observer
@@ -14,9 +15,12 @@ import pandas.com.egithackathon.di.map.MapModule
 import pandas.com.egithackathon.di.map.MapViewModelFactory
 import javax.inject.Inject
 import com.google.android.gms.maps.CameraUpdateFactory
+import com.google.android.gms.maps.model.BitmapDescriptor
+import com.google.android.gms.maps.model.BitmapDescriptorFactory
 import com.google.android.gms.maps.model.LatLng
 import com.google.android.gms.maps.model.Marker
 import com.google.android.gms.maps.model.MarkerOptions
+import com.google.android.gms.maps.model.Polyline
 import com.google.android.gms.maps.model.PolylineOptions
 import com.google.maps.android.PolyUtil
 
@@ -37,7 +41,11 @@ class MapFragment: BaseFragment(), MapView, OnMapReadyCallback, GoogleMap.OnMark
 
     override val layoutId: Int = R.layout.fragment_map
 
+    var firstTime = true
+
     var googleMap: GoogleMap? = null
+
+    var polyline: Polyline? = null
 
 
     override fun onResume() {
@@ -77,10 +85,14 @@ class MapFragment: BaseFragment(), MapView, OnMapReadyCallback, GoogleMap.OnMark
         viewModel = ViewModelProviders.of(this, factory).get(MapViewModel::class.java)
 
         viewModel.location.observe(this, Observer {
+
             if (mapView != null && it != null) {
                 val myLocation = LatLng(it.latitude, it.longitude)
 
-                googleMap?.moveCamera(CameraUpdateFactory.newLatLng(myLocation))
+                if (firstTime) {
+                    googleMap?.moveCamera(CameraUpdateFactory.newLatLng(myLocation))
+                    firstTime = false
+                }
             }
         })
 
@@ -118,12 +130,16 @@ class MapFragment: BaseFragment(), MapView, OnMapReadyCallback, GoogleMap.OnMark
 
         val myLocation = LatLng(viewModel.location.value!!.latitude, viewModel.location.value!!.longitude)
 
-        googleMap?.isMyLocationEnabled = false
+        googleMap?.isMyLocationEnabled = true
         googleMap?.clear()
+
+        val hsv = FloatArray(3)
+        Color.colorToHSV(Color.parseColor("#12517E"), hsv)
         viewModel.atms.value?.forEach {
             val options = MarkerOptions()
                     .position(LatLng(it.location.latitude, it.location.longitude))
                     .title(it.objectId)
+                    .icon(BitmapDescriptorFactory.defaultMarker(hsv[0]))
 
             googleMap?.addMarker(options)
         }
@@ -133,14 +149,20 @@ class MapFragment: BaseFragment(), MapView, OnMapReadyCallback, GoogleMap.OnMark
     }
 
     override fun showPolyLine(polyline: String) {
-        googleMap?.addPolyline(PolylineOptions().addAll(PolyUtil.decode(polyline)))
+        if (this.polyline != null) {
+            this.polyline!!.remove()
+        }
+
+        this.polyline = googleMap?.addPolyline(PolylineOptions().addAll(PolyUtil.decode(polyline)))
     }
 
     override fun onMarkerClick(marker: Marker): Boolean {
 
-        googleMap?.animateCamera(CameraUpdateFactory.newLatLng(marker.position))
+        googleMap?.animateCamera(CameraUpdateFactory.newLatLngZoom(marker.position, 8f))
         viewModel.onMarkerClick(marker.position.latitude, marker.position.longitude)
 
         return false
     }
+
+
 }
