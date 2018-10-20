@@ -125,7 +125,7 @@ class MapFragment : BaseFragment(), MapView, OnMapReadyCallback, GoogleMap.OnMar
                         activity, R.raw.style_json));
 
         googleMap?.setMinZoomPreference(12.0f);
-        googleMap?.setMaxZoomPreference(14.0f);
+        googleMap?.setMaxZoomPreference(18.0f);
         googleMap?.setOnMarkerClickListener(this)
 
         val myLocation = LatLng(viewModel.location.value!!.latitude, viewModel.location.value!!.longitude)

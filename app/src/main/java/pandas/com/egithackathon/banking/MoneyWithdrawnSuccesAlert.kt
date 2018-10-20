@@ -25,7 +25,7 @@ class MoneyWithdrawnSuccesAlert : DialogFragment() {
                 }
 
                 override fun onAnimationEnd(animation: Animator?) {
-                    Thread.sleep(3000)
+                    Thread.sleep(2000)
                     dismiss()
                 }
 

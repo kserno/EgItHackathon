@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import androidx.appcompat.app.AlertDialog
 import androidx.fragment.app.DialogFragment
+import androidx.fragment.app.FragmentManager
 import kotlinx.android.synthetic.main.money_picker.view.*
 import pandas.com.egithackathon.R
 
@@ -68,5 +69,16 @@ class MoneyPicker : DialogFragment() {
         successDialog.show(fragmentManager, "SuccessWithdrawnFragment")
 
         dismiss()
+    }
+
+    override fun show(manager: FragmentManager?, tag: String?) {
+        try {
+            val ft = manager?.beginTransaction()
+            ft?.add(this, tag)
+            ft?.commitAllowingStateLoss()
+        } catch (ignored: IllegalStateException) {
+
+        }
+
     }
 }
