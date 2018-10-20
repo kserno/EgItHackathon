@@ -20,7 +20,7 @@ import pandas.com.egithackathon.model.AtmModel
 /**
  *  Created by filipsollar on 19.10.18
  */
-class TabsFragment: BaseFragment() {
+class TabsFragment : BaseFragment() {
 
     override val layoutId: Int = R.layout.fragment_tabs
 
@@ -80,6 +80,6 @@ class TabsFragment: BaseFragment() {
     }
 
     fun onAtmListClicked(model: AtmModel) {
-        tabLayout.getTabAt(0)?.select()
+        findNavController().navigate(R.id.action_tabsFragment_to_arNavFragment)
     }
 }
