@@ -1,7 +1,6 @@
 package pandas.com.egithackathon.banking
 
 import android.app.Dialog
-import android.content.DialogInterface
 import android.os.Bundle
 import android.view.LayoutInflater
 import androidx.appcompat.app.AlertDialog
@@ -23,11 +22,14 @@ class MoneyPicker : DialogFragment() {
 
             builder.setMessage("ATM Withdrawal")
                     .setView(view)
-                    .setNegativeButton("Cancel",
-                            DialogInterface.OnClickListener { dialog, id ->
-                                // Send the negative button event back to the host activity
-                                dismiss()
-                            })
+//                    .setPositiveButton("Withdraw") { dialog, id ->
+//                        Toast.makeText(it, "Succesfully withdrawn ")
+//                        dismiss()
+//                    }
+                    .setNegativeButton("Cancel") { dialog, id ->
+                        // Send the negative button event back to the host activity
+                        dismiss()
+                    }
 
             builder.create()
         } ?: throw IllegalStateException("Activity cannot be null")
