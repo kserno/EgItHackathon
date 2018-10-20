@@ -5,8 +5,11 @@ import android.os.Bundle
 import android.view.View
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
+import com.google.android.gms.maps.CameraUpdateFactory
 import com.google.android.gms.maps.GoogleMap
 import com.google.android.gms.maps.OnMapReadyCallback
+import com.google.android.gms.maps.model.*
+import com.google.maps.android.PolyUtil
 import kotlinx.android.synthetic.main.fragment_map.*
 import pandas.com.egithackathon.BaseFragment
 import pandas.com.egithackathon.R
@@ -14,15 +17,12 @@ import pandas.com.egithackathon.di.map.DaggerMapComponent
 import pandas.com.egithackathon.di.map.MapModule
 import pandas.com.egithackathon.di.map.MapViewModelFactory
 import javax.inject.Inject
-import com.google.android.gms.maps.CameraUpdateFactory
-import com.google.android.gms.maps.model.*
-import com.google.maps.android.PolyUtil
 
 
 /**
  *  Created by filipsollar on 19.10.18
  */
-class MapFragment: BaseFragment(), MapView, OnMapReadyCallback, GoogleMap.OnMarkerClickListener {
+class MapFragment : BaseFragment(), MapView, OnMapReadyCallback, GoogleMap.OnMarkerClickListener {
 
     companion object {
         const val MAP_VIEW_BUNDLE_KEY = "MAP_VIEW_BUNDLE_KEY"
@@ -160,6 +160,8 @@ class MapFragment: BaseFragment(), MapView, OnMapReadyCallback, GoogleMap.OnMark
 
         googleMap?.animateCamera(CameraUpdateFactory.newLatLngZoom(marker.position, 8f))
         viewModel.onMarkerClick(marker.position.latitude, marker.position.longitude)
+
+//        findNavController().navigate(R.id.action_tabsFragment_to_arNavFragment)
 
         return false
     }

@@ -7,7 +7,7 @@
 
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btOther"
         style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -16,11 +16,11 @@
         android:layout_marginTop="8dp"
         android:text="OTHER SUM"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/button5"
-        app:layout_constraintTop_toBottomOf="@+id/button2"/>
+        app:layout_constraintStart_toEndOf="@+id/bt500"
+        app:layout_constraintTop_toBottomOf="@+id/bt100"/>
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/bt100"
         style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -28,12 +28,12 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:text="100"
-        app:layout_constraintEnd_toStartOf="@+id/button3"
-        app:layout_constraintStart_toEndOf="@+id/button4"
-        app:layout_constraintTop_toBottomOf="@+id/button7"/>
+        app:layout_constraintEnd_toStartOf="@+id/bt200"
+        app:layout_constraintStart_toEndOf="@+id/bt50"
+        app:layout_constraintTop_toBottomOf="@+id/bt20"/>
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/bt200"
         style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -41,10 +41,10 @@
         android:layout_marginTop="8dp"
         android:text="200"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button8"/>
+        app:layout_constraintTop_toBottomOf="@+id/bt30"/>
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/bt50"
         style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -52,7 +52,7 @@
         android:layout_marginTop="8dp"
         android:text="50"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button6"/>
+        app:layout_constraintTop_toBottomOf="@+id/bt10"/>
 
     <TextView
         android:id="@+id/tvInfo"
@@ -66,7 +66,7 @@
         app:layout_constraintTop_toTopOf="parent"/>
 
     <Button
-        android:id="@+id/button5"
+        android:id="@+id/bt500"
         style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -74,10 +74,10 @@
         android:layout_marginTop="8dp"
         android:text="500"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button4"/>
+        app:layout_constraintTop_toBottomOf="@+id/bt50"/>
 
     <Button
-        android:id="@+id/button6"
+        android:id="@+id/bt10"
         style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -88,7 +88,7 @@
         app:layout_constraintTop_toBottomOf="@+id/tvInfo"/>
 
     <Button
-        android:id="@+id/button7"
+        android:id="@+id/bt20"
         style="@style/Widget.AppCompat.Button.Colored"
 
         android:layout_width="0dp"
@@ -97,12 +97,12 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:text="20"
-        app:layout_constraintEnd_toStartOf="@+id/button8"
-        app:layout_constraintStart_toEndOf="@+id/button6"
+        app:layout_constraintEnd_toStartOf="@+id/bt30"
+        app:layout_constraintStart_toEndOf="@+id/bt10"
         app:layout_constraintTop_toBottomOf="@+id/tvInfo"/>
 
     <Button
-        android:id="@+id/button8"
+        android:id="@+id/bt30"
         style="@style/Widget.AppCompat.Button.Colored"
 
         android:layout_width="0dp"
@@ -125,7 +125,7 @@
         android:inputType="number"
         app:layout_constraintEnd_toStartOf="@+id/textView3"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button5"/>
+        app:layout_constraintTop_toBottomOf="@+id/bt500"/>
 
     <TextView
         android:id="@+id/textView3"
@@ -137,6 +137,6 @@
         android:text="EUR"
         app:layout_constraintBottom_toBottomOf="@+id/editText"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button"/>
+        app:layout_constraintTop_toBottomOf="@+id/btOther"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
