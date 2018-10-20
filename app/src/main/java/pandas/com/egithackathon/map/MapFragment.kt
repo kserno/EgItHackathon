@@ -118,7 +118,7 @@ class MapFragment: BaseFragment(), MapView, OnMapReadyCallback, GoogleMap.OnMark
 
         val myLocation = LatLng(viewModel.location.value!!.latitude, viewModel.location.value!!.longitude)
 
-        googleMap?.isMyLocationEnabled = true
+        googleMap?.isMyLocationEnabled = false
         googleMap?.clear()
         viewModel.atms.value?.forEach {
             val options = MarkerOptions()

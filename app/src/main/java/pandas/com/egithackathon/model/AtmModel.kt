@@ -14,7 +14,8 @@ data class AtmModel(
         val address: String,
         val location: Location,
         val standalone: Boolean,
-        val distance: Double,
+        val distance: String,
+        val distanceLen: Float,
         val category: String,
         val institute: Institute,
         val features: List<String> = emptyList()

@@ -1,6 +1,6 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/nav_main"
-    app:startDestination="@id/tabsFragment">
+    app:startDestination="@id/arNavFragment">
 
     <fragment
         android:id="@+id/mainFragment"
@@ -10,4 +10,9 @@
         android:id="@+id/tabsFragment"
         android:name="pandas.com.egithackathon.tabs.TabsFragment"
         android:label="TabsFragment" />
+    <fragment
+        android:id="@+id/arNavFragment"
+        android:name="pandas.com.egithackathon.ar.ArNavFragment"
+        android:label="ArNavFragment" />
+
 </navigation>

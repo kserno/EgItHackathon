@@ -5,7 +5,6 @@ import com.squareup.moshi.Moshi
 import com.squareup.moshi.Types
 import pandas.com.egithackathon.location.LocationProvider
 import pandas.com.egithackathon.model.Atm
-import pandas.com.egithackathon.model.AtmMapper
 import pandas.com.egithackathon.model.AtmModel
 import javax.inject.Inject
 
@@ -23,7 +22,7 @@ class DataService @Inject constructor(
 
         val adapter = moshi.adapter<List<Atm>>(Types.newParameterizedType(List::class.java, Atm::class.java))
 
-        return AtmMapper.mapAtms(adapter.fromJson(rawString) ?: emptyList())
+        return AtmMapper.mapAtms(adapter.fromJson(rawString) ?: emptyList(), locationProvider)
     }
 
 }

@@ -6,6 +6,7 @@ import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.lifecycle.MutableLiveData
 import androidx.recyclerview.widget.RecyclerView
+import pandas.com.egithackathon.BR
 import pandas.com.egithackathon.R
 import pandas.com.egithackathon.databinding.ItemAtmBinding
 import pandas.com.egithackathon.model.AtmModel
@@ -46,6 +47,8 @@ class AtmListAdapter: RecyclerView.Adapter<AtmListAdapter.AtmItemViewHolder>() {
         fun bind(item : AtmModel) {
             binding?.viewModel?.atmModel?.value = item
 
+
+            binding?.notifyChange()
             binding?.executePendingBindings()
         }
 

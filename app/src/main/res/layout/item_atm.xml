@@ -26,7 +26,7 @@
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
             tools:text="500m"
-            android:text="@{Double.toString(viewModel.atmModel.distance)}"
+            android:text="@{viewModel.atmModel.distance}"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 

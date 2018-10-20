@@ -15,7 +15,9 @@ class AtmListViewModel(
 ): ViewModel() {
 
 
-    val atmList = MutableLiveData<List<AtmModel>>().apply { value = dataService.getNearbyAtms() }
+    val atmList = MutableLiveData<List<AtmModel>>().apply {
+        value = dataService.getNearbyAtms()
+    }
 
 
 }
