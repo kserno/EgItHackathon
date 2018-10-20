@@ -15,13 +15,7 @@ import pandas.com.egithackathon.di.map.MapModule
 import pandas.com.egithackathon.di.map.MapViewModelFactory
 import javax.inject.Inject
 import com.google.android.gms.maps.CameraUpdateFactory
-import com.google.android.gms.maps.model.BitmapDescriptor
-import com.google.android.gms.maps.model.BitmapDescriptorFactory
-import com.google.android.gms.maps.model.LatLng
-import com.google.android.gms.maps.model.Marker
-import com.google.android.gms.maps.model.MarkerOptions
-import com.google.android.gms.maps.model.Polyline
-import com.google.android.gms.maps.model.PolylineOptions
+import com.google.android.gms.maps.model.*
 import com.google.maps.android.PolyUtil
 
 
@@ -125,7 +119,13 @@ class MapFragment: BaseFragment(), MapView, OnMapReadyCallback, GoogleMap.OnMark
 
     override fun onMapReady(googleMap: GoogleMap?) {
         this.googleMap = googleMap
-        googleMap?.setMinZoomPreference(12f)
+
+        googleMap?.setMapStyle(
+                MapStyleOptions.loadRawResourceStyle(
+                        activity, R.raw.style_json));
+
+        googleMap?.setMinZoomPreference(12.0f);
+        googleMap?.setMaxZoomPreference(14.0f);
         googleMap?.setOnMarkerClickListener(this)
 
         val myLocation = LatLng(viewModel.location.value!!.latitude, viewModel.location.value!!.longitude)
